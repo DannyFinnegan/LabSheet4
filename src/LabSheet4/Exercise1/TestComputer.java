@@ -7,10 +7,11 @@ public class TestComputer {
         String output = "";
         Computer c1 = new Computer();
 
-        output += "Calling the no-argument Computer constructor. " + "The first Computer object details are: \n\n" + c1.toString();
-        Computer c2 = new Computer("Dell", "Laptop", 3.25, -16, 300);
+        //The no-argument constructor is just your computer driver without any actual values.
+        output += "Calling the no-argument Computer constructor... " + "\nThe first Computer object details are: \n\n" + c1.toString();
+        Computer c2 = new Computer("Dell", "Laptop", 3.25, 16, 300);
         c2.setSpeed(-3.15);
-        output += "\n\n\nCalling the multi-argument Computer constructor. " + "The second Computer object details are: \n\n" + c2.toString();
+        output += "\n\n\nCalling the multi-argument Computer constructor... " + "\nThe second Computer object details are: \n\n" + c2.toString();
 
         JOptionPane.showMessageDialog(null, output, "Computer Object Data", JOptionPane.INFORMATION_MESSAGE);
         System.exit(0);
